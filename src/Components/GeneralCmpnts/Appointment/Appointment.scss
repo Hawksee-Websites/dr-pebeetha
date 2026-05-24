@@ -1,0 +1,94 @@
+@use '../../../Partials/variables';
+
+.Appointment {
+    .container {
+        display: flex;
+        position: relative;
+        background-image: url('../../public/img/appointment-cover.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        @media all and (max-width: 400px) {
+            background-position: right;
+
+            background-image: url('../../public/img/appointment-cover-mobile.jpg');
+
+
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            inset: 0;
+            width: 70%;
+            background: linear-gradient(90deg, rgba(#1FE0E0, 1) 0%, rgba(#03aeaf, 0.6) 74%, rgba(#03aeaf, 0.4) 88%, rgba(#03aeaf, 0) 100%);
+
+            @media all and (max-width: 576px) {
+                background: linear-gradient(90deg, rgba(#1FE0E0, 0.6) 0%, rgba(#03aeaf, 0.3) 74%, rgba(#03aeaf, 0.2) 88%, rgba(#03aeaf, 0) 100%);
+
+            }
+        }
+
+        .content {
+
+            padding: 100px 100px;
+
+            @media all and (min-width: 2000px) {
+                max-width: 85%;
+                margin: 0 auto;
+            }
+
+            @media all and (max-width: 1200px) {
+                padding: 100px 80px;
+            }
+
+            @media all and (max-width: 992px) {
+                padding: 100px 50px;
+            }
+
+            @media all and (max-width: 768px) {
+                padding: 100px 32px;
+            }
+
+            @media all and (max-width: 576px) {
+                padding: 80px 14px;
+
+            }
+
+            width: 70%;
+            z-index: 1;
+
+            h2 {
+                font-size: 34px;
+                color: variables.$secondary_color;
+                @include variables.Lato700;
+
+
+
+
+                @media all and (max-width: 768px) {
+                    font-size: 28px;
+
+                }
+            }
+
+            a {
+                @include variables.button_style;
+                color: variables.$white_variant;
+                background-color: variables.$secondary_color;
+
+            }
+
+
+
+        }
+
+
+
+
+    }
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+.Herosection .container .row {
+  display: flex;
+  position: relative;
+  background-image: url("../../public/img/img-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+@media all and (max-width: 850px) {
+  .Herosection .container .row {
+    background-image: url("../../public/img/img-01-mobile.jpg");
+    background-position: right;
+  }
+}
+.Herosection .container .row::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 60%;
+  background: linear-gradient(90deg, #1fe0e0 0%, rgba(3, 174, 175, 0.6) 74%, rgba(3, 174, 175, 0.4) 88%, rgba(3, 174, 175, 0) 100%);
+}
+@media all and (max-width: 576px) {
+  .Herosection .container .row::before {
+    background: linear-gradient(90deg, rgba(31, 224, 224, 0.6) 0%, rgba(3, 174, 175, 0.3) 74%, rgba(3, 174, 175, 0.2) 88%, rgba(3, 174, 175, 0) 100%);
+    width: 65%;
+  }
+}
+.Herosection .container .row .col {
+  padding: 260px 100px;
+  width: 70%;
+  z-index: 1;
+}
+@media all and (min-width: 2000px) {
+  .Herosection .container .row .col {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .Herosection .container .row .col {
+    padding: 260px 80px;
+  }
+}
+@media all and (max-width: 992px) {
+  .Herosection .container .row .col {
+    padding: 260px 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .Herosection .container .row .col {
+    padding: 260px 32px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Herosection .container .row .col {
+    padding: 160px 14px;
+    width: 75%;
+  }
+}
+.Herosection .container .row .col h1 {
+  font-size: 48px;
+  color: rgb(0, 0, 128);
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+@media all and (max-width: 768px) {
+  .Herosection .container .row .col h1 {
+    font-size: 36px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Herosection .container .row .col h1 {
+    font-size: 28px;
+  }
+}
+.Herosection .container .row .col h1 span {
+  white-space: nowrap;
+}
+.Herosection .container .row .col p {
+  color: rgb(0, 0, 128);
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+@media all and (max-width: 576px) {
+  .Herosection .container .row .col p {
+    font-size: 17px;
+  }
+}
+.Herosection .container .row .col a {
+  display: inline-block;
+  padding: 13px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 24px;
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(0, 0, 128);
+  background-color: rgb(250, 251, 255);
+}
+.Herosection .container .row .col a:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+}

@@ -1,0 +1,171 @@
+@use '../../../Partials/variables';
+
+.ServiceIntro {
+    background-color: variables.$white_variant;
+
+    .container {
+        @include variables.container_padding;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media all and (max-width:768px) {
+                flex-direction: column;
+            }
+
+            @include variables.custom-fade-right;
+            @include variables.custom-fade-left;
+
+            .left-col {
+                width: 50%;
+
+                @media all and (max-width:768px) {
+                    width: 100%;
+                    padding-bottom: 60px;
+
+                }
+
+                .content {
+                    h3 {
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                        color: variables.$primary_color;
+                        @include variables.Lato600;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 3px;
+                            height: 24px;
+                            left: -16px;
+                            background-color: variables.$primary_color;
+
+                            @media all and (max-width: 576px) {
+                                left: -9px;
+                            }
+                        }
+
+                    }
+
+                    h2 {
+                        font-size: 28px;
+                        @include variables.text-gradient;
+                        margin-bottom: 12px;
+                        @include variables.Lato600;
+
+                    }
+
+                    p {
+                        @include variables.p_style;
+                    }
+
+                    a {
+                        @include variables.button_style;
+                        background-color: variables.$secondary_color;
+                        color: variables.$white_variant;
+                    }
+
+                }
+            }
+
+            .right-col {
+                width: 50%;
+                padding-left: 70px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-content: center;
+
+
+                @media all and (max-width:768px) {
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+                .img-container {
+                    position: relative;
+                    transition: 0.8s all;
+
+
+                    img {
+                        width: 100%;
+                        height: 180px;
+                        max-width: 100%;
+                        object-fit: cover;
+                    }
+
+                    &:hover {
+                        &::before {
+                            transform: scaleY(1);
+                            opacity: 1;
+                        }
+
+                        &::after {
+                            opacity: 1;
+                        }
+
+
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        inset: 0;
+                        height: 99%;
+                        transform: scaleY(0);
+                        opacity: 0;
+                        transform-origin: middle;
+                        background: linear-gradient(90deg, rgba(0,0,128,0.4) 0%, rgba(3,174,175,0.4) 56%, rgba(3,174,175,0.4) 100%);
+                        backdrop-filter: blur(2px);
+                        transition: 0.4s all;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        opacity: 0;
+                        transform: translateY(-15px);
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                        font-size: 24px;
+                        @include variables.Lato600;
+                        color: white;
+                        transition: 0.4s all;
+                        padding: 0 10px;
+
+
+                    }
+                }
+
+                .img-container.first {
+                    &::after {
+                        content: 'Suction clearance';
+                    }
+                }
+
+                .img-container.second {
+                    &::after {
+                        content: 'Ear lobule repair';
+                    }
+                }
+
+                .img-container.third {
+                    &::after {
+                        content: 'Wax removal';
+                    }
+                }
+
+                .img-container.fourth {
+                    &::after {
+                        content: 'Septoplasty';
+                    }
+                }
+
+
+            }
+        }
+    }
+}

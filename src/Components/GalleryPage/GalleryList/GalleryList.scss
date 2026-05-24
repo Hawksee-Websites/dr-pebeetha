@@ -1,0 +1,100 @@
+@use '../../../Partials/variables';
+
+.Gallery{
+    @include variables.secondary_navbar;
+
+}
+.GalleryList {
+    background-color: variables.$white_variant;
+    overflow: hidden;
+
+
+    .container {
+        @include variables.container_padding;
+
+        h2 {
+            @include variables.h2_style;
+            @include variables.text-gradient;
+            padding-bottom: 50px;
+            text-align: center;
+            width: fit-content;
+            margin:auto;
+        }
+
+        .lg-react-element {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 60px;
+            gap: 6px;
+
+
+            .img-container {
+                overflow: hidden;
+
+
+
+                img {
+                    height: 250px;
+                    width: 350px;
+                    object-fit: cover;
+                    transition: all 0.3s;
+                    max-width: 99%;
+
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: brightness(85%);
+                        transform: scale(1.05);
+                    }
+                }
+
+
+                // lazy loading lozad
+
+                .skeleton-loader {
+                    width: 350px;
+                    height: 250px;
+                    /* Set the height according to your needs */
+                    background: linear-gradient(90deg, #f0f0f01c 25%, #e0e0e02a 50%, #f0f0f02d 75%);
+                    background-size: 200% 100%;
+                    animation: loading 1.5s infinite;
+                    /* Optional: Add border-radius for rounded corners */
+                    margin-bottom: 10px;
+                    text-indent: -9999px;
+
+                }
+
+                .lozad.lazy-loaded {
+                    filter: blur(0);
+
+
+                }
+
+                @keyframes loading {
+                    0% {
+                        background-position: 200% 0;
+                    }
+
+                    100% {
+                        background-position: -200% 0;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
+}
+.spinning_loading {
+    background-color: variables.$white_variant;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    @include variables.spinning_loader;
+}

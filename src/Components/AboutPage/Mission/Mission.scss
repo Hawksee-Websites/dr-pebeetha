@@ -1,0 +1,90 @@
+@use '../../../Partials/variables';
+
+.Mission {
+    background-color:variables.$light_green_variant;
+
+    .container {
+        @include variables.container_padding;
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px 20px;
+            .card {
+                width: 350px;
+                text-align: center;
+                background-color: white;
+                padding: 18px 16px;
+                border-radius: 30px;
+                position: relative;
+                overflow: hidden;
+                @include variables.box-shadow;
+
+                &:hover {
+                   
+
+                    &::before {
+                        // visibility: visible;
+                        animation: slide-shine 1.2s ease-in-out;
+                    }
+                }
+                svg,h3,p,img{
+                    transition: 0.2s all;
+
+                }
+
+
+
+                img{
+                    // margin: 10px 0;
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 10px;
+
+                }
+
+                h3 {
+                    margin: 10px 0;
+                    font-size: 24px;
+                    color: variables.$secondary_color;
+                    @include variables.Lato600;
+
+                }
+
+                p {
+                    @include variables.open-sans-regular;
+                    padding: 6px 0;
+                    @include variables.p_style;
+                    font-size: 15px !important;
+
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    // visibility: hidden;
+
+                    @keyframes slide-shine {
+
+                        0% {
+                            background: linear-gradient(135deg, rgba(255, 255, 255, 0.020045518207282953) 0%, rgba(255, 255, 255, 0) 11%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 86%, rgba(255, 255, 255, 0) 100%);
+                            transform: translate(-100%, -100%);
+                            opacity: 0.6s;
+                            /* Start the animation from the top left corner */
+                        }
+
+                        100% {
+                            background: linear-gradient(135deg, rgba(255, 255, 255, 0.020045518207282953) 0%, rgba(255, 255, 255, 0) 11%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 86%, rgba(255, 255, 255, 0) 100%);
+                            transform: translate(100%, 100%);
+                            opacity: 1;
+                            /* Move the element to the bottom right corner */
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

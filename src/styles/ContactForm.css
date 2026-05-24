@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+.ContactForm .container {
+  padding: 100px 100px;
+}
+@media all and (min-width: 2000px) {
+  .ContactForm .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .ContactForm .container {
+    padding: 80px 80px;
+  }
+}
+@media all and (max-width: 992px) {
+  .ContactForm .container {
+    padding: 80px 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .ContactForm .container {
+    padding: 80px 32px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container {
+    padding: 50px 14px;
+  }
+}
+.ContactForm .container .row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 2px 6px 24px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 6px 24px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 6px 24px -10px rgba(0, 0, 0, 0.75);
+}
+.ContactForm .container .row .card {
+  display: flex;
+  background-color: rgb(250, 251, 255);
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .card {
+    flex-direction: column;
+  }
+}
+.ContactForm .container .row .card .col {
+  width: 50%;
+  text-align: center;
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .card .col {
+    width: 100%;
+    height: 50%;
+  }
+}
+.ContactForm .container .row .card .col.right iframe {
+  min-height: 350px;
+}
+.ContactForm .container .row .card .col.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 44px 20px;
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .card .col.left {
+    padding: 40px 20px;
+  }
+}
+.ContactForm .container .row .card .col.left h3 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  background: linear-gradient(90deg, rgb(0, 0, 128) 0%, rgb(0, 0, 128) 14%, #03aeaf 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media all and (max-width: 1200px) {
+  .ContactForm .container .row .card .col.left h3 {
+    font-size: 32px;
+  }
+}
+@media all and (max-width: 992px) {
+  .ContactForm .container .row .card .col.left h3 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .ContactForm .container .row .card .col.left h3 {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .card .col.left h3 {
+    font-size: 24px;
+  }
+}
+.ContactForm .container .row .card .col.left form input,
+.ContactForm .container .row .card .col.left form textarea {
+  padding: 12px;
+  margin: 5px 0;
+  width: 200px;
+  max-width: 100%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #ebf8f8;
+  color: #03aeaf;
+}
+.ContactForm .container .row .card .col.left form input::placeholder,
+.ContactForm .container .row .card .col.left form textarea::placeholder {
+  color: #03aeaf;
+  font-size: 14px;
+}
+.ContactForm .container .row .card .col.left form button {
+  display: inline-block;
+  padding: 13px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 24px;
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: rgb(0, 0, 128);
+  color: rgb(250, 251, 255);
+  outline: none;
+  border: none;
+}
+.ContactForm .container .row .card .col.left form button:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+}
+.ContactForm .container .row .bottom-section {
+  background-color: #03aeaf;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+.ContactForm .container .row .bottom-section .bottom-card {
+  display: flex;
+  background-color: #03aeaf;
+  padding: 20px 0;
+  width: 33%;
+  justify-content: center;
+}
+@media all and (max-width: 992px) {
+  .ContactForm .container .row .bottom-section .bottom-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .bottom-section .bottom-card {
+    text-align: center;
+    justify-content: normal;
+  }
+}
+.ContactForm .container .row .bottom-section .bottom-card:hover .icon img {
+  transform: scale(1.05);
+}
+.ContactForm .container .row .bottom-section .bottom-card .icon img {
+  width: 60px;
+  transition: 0.3s all;
+}
+@media all and (max-width: 768px) {
+  .ContactForm .container .row .bottom-section .bottom-card .icon img {
+    width: 40px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .bottom-section .bottom-card .icon img {
+    width: 30px;
+  }
+}
+.ContactForm .container .row .bottom-section .bottom-card .content {
+  margin-left: 14px;
+  color: rgb(255, 255, 255);
+}
+@media all and (max-width: 768px) {
+  .ContactForm .container .row .bottom-section .bottom-card .content {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .bottom-section .bottom-card .content {
+    display: none;
+  }
+}
+@media all and (max-width: 576px) {
+  .ContactForm .container .row .bottom-section .bottom-card .content p {
+    font-size: 10px;
+  }
+}
+.ContactForm .container .row .bottom-section .bottom-card .content h3 {
+  padding-bottom: 6px;
+}
+.ContactForm .container .row .bottom-section .bottom-card .content a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+.Contact .Navbar .header ul li a {
+  color: rgb(0, 0, 128) !important;
+}
+.Contact .Navbar .header ul li a:hover {
+  color: #03aeaf !important;
+}
+@media all and (max-width: 768px) {
+  .Contact .Navbar .header ul li a {
+    color: rgb(0, 0, 128) !important;
+  }
+}
+.Contact .Navbar .header.active ul li a {
+  color: rgb(0, 0, 128) !important;
+}
+.Contact .Navbar .header.active ul li a:hover {
+  color: #03aeaf !important;
+}
+@media all and (max-width: 768px) {
+  .Contact .Navbar .header.active ul li a {
+    color: rgb(0, 0, 128) !important;
+  }
+}

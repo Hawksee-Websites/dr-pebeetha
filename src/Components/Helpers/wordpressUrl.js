@@ -1,0 +1,1 @@
+export const  wordpressUrl = 'http://dr-pebeetha-server.local/';

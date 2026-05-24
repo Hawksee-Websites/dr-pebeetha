@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+.Appointment .container {
+  display: flex;
+  position: relative;
+  background-image: url("../../public/img/appointment-cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media all and (max-width: 400px) {
+  .Appointment .container {
+    background-position: right;
+    background-image: url("../../public/img/appointment-cover-mobile.jpg");
+  }
+}
+.Appointment .container::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 70%;
+  background: linear-gradient(90deg, #1fe0e0 0%, rgba(3, 174, 175, 0.6) 74%, rgba(3, 174, 175, 0.4) 88%, rgba(3, 174, 175, 0) 100%);
+}
+@media all and (max-width: 576px) {
+  .Appointment .container::before {
+    background: linear-gradient(90deg, rgba(31, 224, 224, 0.6) 0%, rgba(3, 174, 175, 0.3) 74%, rgba(3, 174, 175, 0.2) 88%, rgba(3, 174, 175, 0) 100%);
+  }
+}
+.Appointment .container .content {
+  padding: 100px 100px;
+  width: 70%;
+  z-index: 1;
+}
+@media all and (min-width: 2000px) {
+  .Appointment .container .content {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .Appointment .container .content {
+    padding: 100px 80px;
+  }
+}
+@media all and (max-width: 992px) {
+  .Appointment .container .content {
+    padding: 100px 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .Appointment .container .content {
+    padding: 100px 32px;
+  }
+}
+@media all and (max-width: 576px) {
+  .Appointment .container .content {
+    padding: 80px 14px;
+  }
+}
+.Appointment .container .content h2 {
+  font-size: 34px;
+  color: rgb(0, 0, 128);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+@media all and (max-width: 768px) {
+  .Appointment .container .content h2 {
+    font-size: 28px;
+  }
+}
+.Appointment .container .content a {
+  display: inline-block;
+  padding: 13px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 24px;
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(250, 251, 255);
+  background-color: rgb(0, 0, 128);
+}
+.Appointment .container .content a:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+}

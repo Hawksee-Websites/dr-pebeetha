@@ -1,0 +1,32 @@
+.Whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  transition: 0.3s all ease-in;
+}
+@media all and (max-width: 796px) {
+  .Whatsapp {
+    bottom: 14px;
+    right: 14px;
+  }
+}
+.Whatsapp:hover {
+  right: 20px;
+}
+.Whatsapp img {
+  width: 60px;
+  transition: all 0.15s ease-in;
+  z-index: 9;
+  position: relative;
+  opacity: 0.6;
+}
+.Whatsapp img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+@media all and (max-width: 796px) {
+  .Whatsapp img {
+    width: 50px;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../../../Partials/variables';
+
+.OnlineAppointment {
+    .Navbar {
+        .header {
+            position: static;
+            background-color: variables.$primary_color;
+
+        }
+    }
+}
+
+.AppointmentIframe {
+    iframe {
+        width: 100%;
+        height: 140vh;
+    }
+}

@@ -1,0 +1,25 @@
+@use '../../../Partials/variables';
+.Services{
+    @include variables.secondary_navbar;
+}
+
+.ServiceList {
+    .container {
+        @include variables.container_padding;
+        @include variables.accordion;
+
+        h2 {
+            @include variables.h2_style;
+            text-align: center;
+            margin: 0 0 50px;
+            @include variables.text-gradient;
+
+        }
+        .Surgical-h2{
+            margin: 80px 0 50px;
+
+        }
+
+    
+    }
+}

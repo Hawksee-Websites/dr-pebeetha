@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+.Gallery .Navbar .header ul li a {
+  color: rgb(0, 0, 128) !important;
+}
+.Gallery .Navbar .header ul li a:hover {
+  color: #03aeaf !important;
+}
+@media all and (max-width: 768px) {
+  .Gallery .Navbar .header ul li a {
+    color: rgb(0, 0, 128) !important;
+  }
+}
+.Gallery .Navbar .header.active ul li a {
+  color: rgb(0, 0, 128) !important;
+}
+.Gallery .Navbar .header.active ul li a:hover {
+  color: #03aeaf !important;
+}
+@media all and (max-width: 768px) {
+  .Gallery .Navbar .header.active ul li a {
+    color: rgb(0, 0, 128) !important;
+  }
+}
+
+.GalleryList {
+  background-color: rgb(250, 251, 255);
+  overflow: hidden;
+}
+.GalleryList .container {
+  padding: 100px 100px;
+}
+@media all and (min-width: 2000px) {
+  .GalleryList .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .GalleryList .container {
+    padding: 80px 80px;
+  }
+}
+@media all and (max-width: 992px) {
+  .GalleryList .container {
+    padding: 80px 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .GalleryList .container {
+    padding: 80px 32px;
+  }
+}
+@media all and (max-width: 576px) {
+  .GalleryList .container {
+    padding: 50px 14px;
+  }
+}
+.GalleryList .container h2 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgb(0, 0, 128) 0%, rgb(0, 0, 128) 14%, #03aeaf 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 50px;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+@media all and (max-width: 1200px) {
+  .GalleryList .container h2 {
+    font-size: 32px;
+  }
+}
+@media all and (max-width: 992px) {
+  .GalleryList .container h2 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .GalleryList .container h2 {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 576px) {
+  .GalleryList .container h2 {
+    font-size: 24px;
+  }
+}
+.GalleryList .container .lg-react-element {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  gap: 6px;
+}
+.GalleryList .container .lg-react-element .img-container {
+  overflow: hidden;
+}
+.GalleryList .container .lg-react-element .img-container img {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  transition: all 0.3s;
+  max-width: 99%;
+}
+.GalleryList .container .lg-react-element .img-container img:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+  transform: scale(1.05);
+}
+.GalleryList .container .lg-react-element .img-container .skeleton-loader {
+  width: 350px;
+  height: 250px;
+  /* Set the height according to your needs */
+  background: linear-gradient(90deg, rgba(240, 240, 240, 0.1098039216) 25%, rgba(224, 224, 224, 0.1647058824) 50%, rgba(240, 240, 240, 0.1764705882) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  /* Optional: Add border-radius for rounded corners */
+  margin-bottom: 10px;
+  text-indent: -9999px;
+}
+.GalleryList .container .lg-react-element .img-container .lozad.lazy-loaded {
+  filter: blur(0);
+}
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.spinning_loading {
+  background-color: rgb(250, 251, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+}
+.spinning_loading .loader {
+  width: 64px;
+  z-index: 99;
+  height: 64px;
+  position: relative;
+  background-image: linear-gradient(#03aeaf 16px, transparent 0), linear-gradient(rgb(0, 0, 128) 16px, transparent 0), linear-gradient(rgb(0, 0, 128) 16px, transparent 0), linear-gradient(#03aeaf 16px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left top, left bottom, right top, right bottom;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(0deg);
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(360deg);
+  }
+}

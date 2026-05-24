@@ -1,0 +1,41 @@
+@use '../../../Partials/variables';
+
+.PreLoader {
+    background:white;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    @include variables.spinning_loader;
+    .middle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)scale(1.2);
+        position: absolute;
+      }
+}
+
+.PreLoader {
+    display: none;
+    /* Initially hide the preloader */
+}
+
+.PreLoader.visible {
+    display: block;
+    /* Show the preloader when the 'visible' class is present */
+}
+
+.PreLoader.hidden {
+    display: none;
+    /* Hide the preloader when the 'hidden' class is present */
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,199 @@
+@use '../../../Partials/variables';
+
+.ContactForm {
+    .container {
+        @include variables.container_padding;
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 2px 6px 24px -10px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 2px 6px 24px -10px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 6px 24px -10px rgba(0, 0, 0, 0.75);
+
+            .card {
+                display: flex;
+                background-color: variables.$white_variant;
+                border-radius: 10px;
+                overflow: hidden;
+
+                @media all and (max-width:576px) {
+                    flex-direction: column;
+
+                }
+
+                .col {
+                    width: 50%;
+                    text-align: center;
+
+                    @media all and (max-width:576px) {
+                        width: 100%;
+                        height: 50%;
+                        
+
+                    }
+                }
+                .col.right{
+                    iframe{
+                        min-height: 350px;
+                    }
+                }
+
+                .col.left {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 44px 20px;
+
+                    @media all and (max-width:576px) {
+                        padding: 40px 20px;
+
+
+                    }
+
+                    h3 {
+                        @include variables.h2_style;
+                        white-space: nowrap;
+                        @include variables.text-gradient;
+                    }
+
+                    form {
+
+                        input,
+                        textarea {
+                            padding: 12px;
+                            margin: 5px 0;
+                            width: 200px;
+                            max-width: 100%;
+                            border-radius: 6px;
+                            border: none;
+                            outline: none;
+                            background-color: variables.$light_green_variant;
+                            color: variables.$primary_color;
+
+                            &::placeholder {
+                                color: variables.$primary_color;
+                                font-size: 14px;
+                            }
+                        }
+
+                        button {
+                            @include variables.button_style;
+                            background-color: variables.$secondary_color;
+                            color: variables.$white_variant;
+                            outline: none;
+                            border: none;
+
+
+
+                        }
+
+
+
+                    }
+                }
+
+
+            }
+
+            .bottom-section {
+                background-color: variables.$primary_color;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 0 0 10px 10px;
+
+                .bottom-card {
+                    display: flex;
+                    background-color: variables.$primary_color;
+                    padding: 20px 0;
+                    width: 33%;
+                    justify-content: center;
+
+
+                    @media all and (max-width:992px) {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+
+                    }
+
+                    @media all and (max-width:576px) {
+                        text-align: center;
+                        justify-content: normal;
+
+
+                    }
+
+                    &:hover {
+                        .icon {
+                            img {
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+
+                    .icon {
+                        img {
+                            width: 60px;
+                            transition: 0.3s all;
+
+                            @media all and (max-width:768px) {
+                                width: 40px;
+
+
+                            }
+
+                            @media all and (max-width:576px) {
+                                width: 30px;
+
+
+                            }
+
+
+
+                        }
+
+                    }
+
+                    .content {
+                        margin-left: 14px;
+                        color: rgb(255, 255, 255);
+
+                        @media all and (max-width:768px) {
+                            font-size: 14px;
+
+
+                        }
+                        @media all and (max-width:576px) {
+                         display: none;
+    
+                        }
+
+                        p {
+                            @media all and (max-width:576px) {
+                                font-size: 10px;
+                            }
+                        }
+
+                        h3 {
+                            padding-bottom: 6px;
+                        }
+
+                        a {
+                            display: inline-block;
+                            color: rgb(255, 255, 255);
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.Contact {
+    @include variables.secondary_navbar;
+}

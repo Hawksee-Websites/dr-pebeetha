@@ -1,0 +1,37 @@
+@use '../../../Partials/variables';
+
+.AppointmentPage {
+
+    @include variables.secondary_navbar;
+}
+
+
+.AppointmentOptions {
+    // padding: 15vh 0;
+
+    .container {
+        @include variables.container_padding;
+
+        h2 {
+            @include variables.h2_style;
+            @include variables.text_gradient
+        }
+
+        p {
+            @include variables.p_style;
+            margin: 6px 0;
+
+        }
+
+        .options {
+
+
+            a {
+                @include variables.button_style;
+                background-color: variables.$secondary_color;
+                color: white;
+                margin: 20px 6px;
+            }
+        }
+    }
+}

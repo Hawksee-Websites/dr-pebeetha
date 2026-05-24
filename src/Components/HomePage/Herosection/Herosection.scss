@@ -1,0 +1,119 @@
+@use '../../../Partials/variables';
+
+.Herosection {
+    .container {
+        .row {
+            display: flex;
+            position: relative;
+            background-image: url('../../public/img/img-01.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+
+            @media all and (max-width: 850px) {
+                background-image: url('../../public/img/img-01-mobile.jpg');
+                background-position: right;
+
+            }
+
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                inset: 0;
+                width: 60%;
+                background: linear-gradient(90deg, rgba(#1FE0E0, 1) 0%, rgba(#03aeaf, 0.6) 74%, rgba(#03aeaf, 0.4) 88%, rgba(#03aeaf, 0) 100%);
+
+                @media all and (max-width: 576px) {
+                    background: linear-gradient(90deg, rgba(#1FE0E0, 0.6) 0%, rgba(#03aeaf, 0.3) 74%, rgba(#03aeaf, 0.2) 88%, rgba(#03aeaf, 0) 100%);
+                    width: 65%;
+
+                }
+            }
+
+            .col {
+
+                padding: 260px 100px;
+                width: 70%;
+                z-index: 1;
+
+                @media all and (min-width: 2000px) {
+                    max-width: 85%;
+                    margin: 0 auto;
+                }
+
+                @media all and (max-width: 1200px) {
+                    padding: 260px 80px;
+                }
+
+                @media all and (max-width: 992px) {
+                    padding: 260px 50px;
+                }
+
+                @media all and (max-width: 768px) {
+                    padding: 260px 32px;
+                }
+
+                @media all and (max-width: 576px) {
+                    padding: 160px 14px;
+                    width: 75%;
+
+
+                }
+
+
+
+                h1 {
+                    font-size: 48px;
+                    color: variables.$secondary_color;
+                    @include variables.Lato900;
+                    // font-family: sans-serif;
+                    // text-shadow: 2px 2px #f7f9fc2a;
+                    // @include variables.text-gradient-golden;
+
+
+                    @media all and (max-width: 768px) {
+                        font-size: 36px;
+
+                    }
+
+                    @media all and (max-width: 576px) {
+                        font-size: 28px;
+                    }
+                    span{
+                        white-space:nowrap;
+                    }
+                }
+
+                p {
+                    color: rgb(0, 0, 128);
+                    margin-top: 10px;
+                    font-size: 20px;
+                    @include variables.OpenSans600;
+                    width: 100%;
+
+                    @media all and (max-width: 576px) {
+                        font-size: 17px;
+                    }
+
+                }
+
+                a {
+                    @include variables.button_style;
+                    color: variables.$secondary_color;
+                    background-color: variables.$white_variant;
+
+                }
+
+
+
+            }
+
+
+        }
+
+    }
+
+}

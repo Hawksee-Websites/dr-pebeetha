@@ -1,0 +1,140 @@
+@use '../../../Partials/variables';
+
+.Footer {
+    background-color: variables.$black_variant;
+
+    .container {
+        padding: 50px 100px;
+
+        @media all and (min-width: 2000px) {
+            max-width: 85%;
+            margin: 0 auto;
+        }
+
+        @media all and (max-width: 1200px) {
+            padding: 30px 100px;
+
+        }
+
+        @media all and (max-width: 992px) {
+            padding: 30px 50px;
+        }
+
+        @media all and (max-width: 768px) {
+            padding: 30px 32px;
+        }
+
+        @media all and (max-width: 576px) {
+            padding: 30px 14px;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px 40px;
+
+            @media all and (max-width: 576px) {
+                gap: 30px 170px;
+
+            }
+
+            .col {
+                position: relative;
+
+
+                .logo {
+                    img {
+                        width: 160px;
+                        margin-bottom: 14px;
+
+                        @media all and (max-width:576px) {
+                            width: 140px;
+
+                        }
+                    }
+                }
+
+                p {
+                    color: variables.$white_variant;
+                    font-weight: 500;
+                    @include variables.Lato600;
+
+                }
+
+                .quote {
+                    margin: 6px 0;
+                    font-weight: 700;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    @include variables.Lato600;
+
+                }
+
+                .social-media-icons {
+                    a {
+                        display: inline-block;
+                        margin: 16px 10px 0;
+
+                        i {
+                            color: variables.$white_variant;
+                            font-size: 24px;
+                            transition: 0.3s all;
+
+                            &:hover {
+                                transform: scale(1.15);
+                                color: variables.$primary_color;
+                            }
+                        }
+                    }
+                }
+
+                li {
+                    list-style: none;
+                    padding: 9px 0;
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        @include variables.Lato600;
+                        transition: 0.3s all;
+                        position: relative;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: variables.$primary_color;
+                        }
+                    }
+                }
+
+            }
+
+            .col.right {
+                display: flex;
+
+                .icon {
+                    padding-right: 8px;
+
+                    i {
+                        color: variables.$primary_color;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.781);
+        padding: 10px 0;
+        font-weight: 100;
+        font-size: 13px;
+        @include variables.Lato400;
+
+
+    }
+}

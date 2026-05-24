@@ -1,0 +1,27 @@
+@use '../../../Partials/variables';
+
+.EmbedList{
+    margin-top: -140px;
+    background-color: variables.$white_variant;
+    .container{
+        @include variables.container_padding;
+        h2{
+            @include variables.h2_style;
+            @include variables.text-gradient;
+            padding-bottom: 50px;
+            text-align: center;
+            width: fit-content;
+            margin:auto;
+
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px ;
+        }
+        iframe{
+            max-width: 100%;
+        }
+    }
+}

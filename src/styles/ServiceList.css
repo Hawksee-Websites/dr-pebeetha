@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+.Services .Navbar .header ul li a {
+  color: rgb(0, 0, 128) !important;
+}
+.Services .Navbar .header ul li a:hover {
+  color: #03aeaf !important;
+}
+@media all and (max-width: 768px) {
+  .Services .Navbar .header ul li a {
+    color: rgb(0, 0, 128) !important;
+  }
+}
+.Services .Navbar .header.active ul li a {
+  color: rgb(0, 0, 128) !important;
+}
+.Services .Navbar .header.active ul li a:hover {
+  color: #03aeaf !important;
+}
+@media all and (max-width: 768px) {
+  .Services .Navbar .header.active ul li a {
+    color: rgb(0, 0, 128) !important;
+  }
+}
+
+.ServiceList .container {
+  padding: 100px 100px;
+}
+@media all and (min-width: 2000px) {
+  .ServiceList .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .ServiceList .container {
+    padding: 80px 80px;
+  }
+}
+@media all and (max-width: 992px) {
+  .ServiceList .container {
+    padding: 80px 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .ServiceList .container {
+    padding: 80px 32px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ServiceList .container {
+    padding: 50px 14px;
+  }
+}
+.ServiceList .container .accordion-section {
+  list-style-position: inside;
+}
+.ServiceList .container .accordion-section ul {
+  margin: 16px 0 16px 6px;
+  color: rgb(0, 0, 128);
+}
+.ServiceList .container .accordion-section a {
+  display: inline-block;
+  padding: 13px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 24px;
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: rgb(0, 0, 128) !important;
+  color: white !important;
+}
+.ServiceList .container .accordion-section a:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+}
+.ServiceList .container .accordion-section a:hover {
+  opacity: 0.9;
+}
+.ServiceList .container .accordion-section a i {
+  margin-right: 6px;
+}
+.ServiceList .container .accordion-section li {
+  font-size: 18px;
+}
+.ServiceList .container .accordion-section .dp-img {
+  width: 50px;
+  margin-right: 20px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.ServiceList .container .accordion-section .accordion {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 128);
+  cursor: pointer;
+  background-color: #ebf8f8;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  position: relative;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+}
+@media all and (max-width: 992px) {
+  .ServiceList .container .accordion-section .accordion {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ServiceList .container .accordion-section .accordion {
+    font-size: 16px;
+  }
+}
+.ServiceList .container .accordion-section .accordion:hover {
+  transform: scale(1.02);
+}
+.ServiceList .container .accordion-section .accordion span {
+  position: absolute;
+  right: 20px;
+}
+.ServiceList .container .accordion-section .accordion p {
+  width: 75%;
+}
+.ServiceList .container .accordion-section .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 6px;
+}
+.ServiceList .container .accordion-section .panel p {
+  font-size: 17px;
+  line-height: 156%;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(0, 0, 128);
+}
+@media all and (max-width: 992px) {
+  .ServiceList .container .accordion-section .panel p {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 992px) {
+  .ServiceList .container .accordion-section .panel p {
+    font-size: 18px;
+  }
+}
+.ServiceList .container .accordion-section .panel img {
+  margin: 40px 20px;
+  max-width: 85%;
+  width: 500px;
+  max-height: 100%;
+  min-height: 350px;
+  object-fit: contain;
+}
+.ServiceList .container .accordion-section .panel h3 {
+  margin: 30px 0 16px;
+  color: rgb(0, 0, 128);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.ServiceList .container .accordion-section .panel h4 {
+  margin: 10px 0 6px;
+  color: rgb(0, 0, 128);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.ServiceList .container .accordion-section .panel span {
+  font-weight: 700;
+}
+.ServiceList .container .accordion-section .panel.active {
+  max-height: 100%;
+  padding: 40px 10px;
+  background-color: #ebf8f8;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-out;
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+}
+.ServiceList .container h2 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 50px;
+  background: linear-gradient(90deg, rgb(0, 0, 128) 0%, rgb(0, 0, 128) 14%, #03aeaf 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media all and (max-width: 1200px) {
+  .ServiceList .container h2 {
+    font-size: 32px;
+  }
+}
+@media all and (max-width: 992px) {
+  .ServiceList .container h2 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .ServiceList .container h2 {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ServiceList .container h2 {
+    font-size: 24px;
+  }
+}
+.ServiceList .container .Surgical-h2 {
+  margin: 80px 0 50px;
+}

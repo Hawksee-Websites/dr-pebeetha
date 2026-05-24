@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+.OfflineAppointment .Navbar .header {
+  position: static;
+  background-color: #03aeaf;
+}
+
+.AppointmentRequestForm .container {
+  padding: 100px 100px;
+}
+@media all and (min-width: 2000px) {
+  .AppointmentRequestForm .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1200px) {
+  .AppointmentRequestForm .container {
+    padding: 80px 80px;
+  }
+}
+@media all and (max-width: 992px) {
+  .AppointmentRequestForm .container {
+    padding: 80px 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .AppointmentRequestForm .container {
+    padding: 80px 32px;
+  }
+}
+@media all and (max-width: 576px) {
+  .AppointmentRequestForm .container {
+    padding: 50px 14px;
+  }
+}
+.AppointmentRequestForm .container .card {
+  padding: 34px;
+  background-color: rgb(250, 251, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 19px -13px rgba(0, 0, 0, 0.75);
+}
+.AppointmentRequestForm .container .card h2 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgb(0, 0, 128) 0%, rgb(0, 0, 128) 14%, #03aeaf 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+@media all and (max-width: 1200px) {
+  .AppointmentRequestForm .container .card h2 {
+    font-size: 32px;
+  }
+}
+@media all and (max-width: 992px) {
+  .AppointmentRequestForm .container .card h2 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .AppointmentRequestForm .container .card h2 {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 576px) {
+  .AppointmentRequestForm .container .card h2 {
+    font-size: 24px;
+  }
+}
+.AppointmentRequestForm .container .card form {
+  width: 100%;
+  text-align: center;
+}
+.AppointmentRequestForm .container .card form .recaptcha-align {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+.AppointmentRequestForm .container .card form input,
+.AppointmentRequestForm .container .card form textarea {
+  padding: 12px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #ebf8f8;
+  color: #03aeaf;
+}
+.AppointmentRequestForm .container .card form input::placeholder,
+.AppointmentRequestForm .container .card form textarea::placeholder {
+  color: #03aeaf;
+  font-size: 14px;
+}
+.AppointmentRequestForm .container .card form button {
+  display: inline-block;
+  padding: 13px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 24px;
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: rgb(0, 0, 128);
+  color: rgb(250, 251, 255);
+  outline: none;
+  border: none;
+}
+.AppointmentRequestForm .container .card form button:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 17px 39px -20px rgba(0, 0, 0, 0.75);
+}

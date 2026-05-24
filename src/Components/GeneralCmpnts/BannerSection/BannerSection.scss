@@ -1,0 +1,62 @@
+@use '../../../Partials/variables';
+
+.About {
+    // @include variables.black_navbar;
+
+}
+
+.BannerSection {
+    position: relative;
+
+
+
+    .img-container {
+        height: 380px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(90deg, rgba(250, 251, 255, 1) 0%, rgba(250, 251, 255, 0.87718837535014) 26%, rgba(250, 251, 255, 0) 100%);
+
+
+    }
+
+    .text {
+        h2 {
+            color: variables.$secondary_color;
+            position: absolute;
+            top: 45%;
+            left: 8%;
+            font-size: 64px;
+            z-index: 1;
+            @include variables.Lato700;
+
+
+
+            @media all and (max-width: 992px) {
+                font-size: 48px;
+
+            }
+
+            @media all and (max-width: 768px) {
+                font-size: 44px;
+            }
+
+            @media all and (max-width: 576px) {
+                white-space: nowrap;
+            }
+
+        }
+    }
+}

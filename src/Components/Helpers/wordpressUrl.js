@@ -1,1 +1,1 @@
-export const  wordpressUrl = 'http://dr-pebeetha-server.local/';
+export const  wordpressUrl = 'https://admin.drpebeetha.com/';
